@@ -181,8 +181,11 @@ module.exports = {
       }
     },
     fontFamily: {
-      'heading': ['Poppins', 'Arial', 'sans-serif'],
-      'body': ['Muli', 'Open Sans', 'sans-serif']
+      'heading': ['Amatic SC', 'Arial', 'sans-serif'],
+      'body': ['Josefin Sans', 'Open Sans', 'sans-serif']
+    },
+    rotate: {
+      '360': '360deg'
     }
   },
   variants: {},

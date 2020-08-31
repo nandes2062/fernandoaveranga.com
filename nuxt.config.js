@@ -1,3 +1,6 @@
+import { join } from 'path'
+// Langs translates
+import langs from './lang'
 
 export default {
   /*
@@ -16,6 +19,7 @@ export default {
   */
   head: {
     title: process.env.npm_package_name || '',
+    htmlAttrs: { lang: 'es'},
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -29,12 +33,24 @@ export default {
   ** Global CSS
   */
   css: [
+    // SCSS file in the project
+    '@/sass/styles.scss'
   ],
+  styleResources: { 
+    scss: [ 
+      '~/sass', 
+    ]
+  },
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '~/plugins/global-components.js',
+    {
+      src: '~/plugins/vuescrollreveal',
+      ssr: false
+    }
   ],
   /*
   ** Auto import components
@@ -58,8 +74,51 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    '@nuxt/content',
+    [
+      'nuxt-i18n', { /* module options */ }
+    ],
+    [
+      'nuxt-fontawesome', {
+        imports: [
+         {
+           set: '@fortawesome/free-solid-svg-icons',
+           icons: ['fas']
+         },
+         {
+           set:'@fortawesome/free-brands-svg-icons',
+           icons: ['fab']
+         }
+       ]
+      }
+    ]
   ],
+  // Or with global options
+  i18n: {
+    locales: [
+      {
+        code: 'es',
+        name: 'Español'
+      },
+      {
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'de',
+        name: 'Deutschland'
+      }
+    ],
+    defaultLocale: 'es',
+    vueI18n: {
+      fallbackLocale: 'es',
+      messages: langs
+    }
+  },
+  //alternative place for config
+  fontawesome: {
+    imports: []
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -75,5 +134,18 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    // extractCSS: true,
+    postcss: {
+      plugins: {
+        tailwindcss: join(__dirname, 'tailwind.config.js'),
+        'postcss-custom-properties': {},
+        cssnano: {
+          preset: 'default'
+        }
+      },
+      preset: {
+        autoprefixer: {}
+      }
+    }
   }
 }

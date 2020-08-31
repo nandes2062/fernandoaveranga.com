@@ -1,0 +1,18 @@
+.headroom {}
+.headroom--top {
+  .main-header {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.headroom--not-bottom {
+  
+}
+.headroom--not-top {
+  .main-header {
+    // background: var(--primary-color);
+  }
+  img.logo-header {
+    height: 4rem;
+  }
+}
