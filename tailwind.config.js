@@ -197,6 +197,8 @@ module.exports = {
       'components/**/*.js',
       'components/**/*.html',
       'components/**/*.vue',
+      'layouts/**/*.html',
+      'layouts/**/*.js',
       'layouts/**/*.vue',
       'pages/**/*.vue',
       'plugins/**/*.js',
