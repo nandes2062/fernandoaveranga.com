@@ -26,7 +26,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Ingeniero UI, Ingeniero de Sistemas, Desarrollador web, Bolivia' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.jpg' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*

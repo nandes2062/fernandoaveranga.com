@@ -1,14 +1,17 @@
 <template>
   <main>
     <FerPresentation class="bg-theme-base" />
+    <!-- <FerPortfolio class="bg-accent-100" /> -->
   </main>
 </template>
 
 <script>
 import FerPresentation from '@/components/index/01-presentation'
+import FerPortfolio from '@/components/index/02-portfolio'
 
 const indexComponents = {
-  FerPresentation
+  FerPresentation,
+  FerPortfolio
 }
 export default {
   name: 'Inicio',
