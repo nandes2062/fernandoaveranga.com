@@ -1,20 +1,20 @@
 <header class="z-20 fixed top-0 w-full bg-primary-base text-light-base shadow-xl">
   <div class="mx-auto relative container flex items-center justify-between md:flex-nowrap flex-wrap">
-    <a href="/" title="Fernando Averanga">
+    <nuxt-link to="/" title="Fernando Averanga">
       <div class="flex items-center py-5">
-        <img src="fernando-averanga.png" alt="Nandes - Fernando Averanga" class="bg-light-base w-16 h-16 border shadow-md rounded-full">
+        <img src="@/static/fernando-averanga.png" alt="Nandes - Fernando Averanga" class="bg-light-base w-16 h-16 border shadow-md rounded-full">
         <div class="ml-5">
           <h1 class="md:text-4xl text-2xl font-heading font-bold">Fernando Averanga</h1>
           <p class="text-sm font-body">{{ $t('general.occupation') }}</p>
         </div>
       </div>
-    </a>
+    </nuxt-link>
     <!-- <button class="md:hidden">
       MENU
     </button> -->
     <nav class="md:w-auto w-full self-end">
       <ul class="flex font-medium mb-3 justify-center">
-        <li class="mx-2"><a target="_blank" href="https://nandes2062.github.io/docs/fernando_averanga_cv.pdf" class="" title="Curriculum">Hoja de vida</a></li>
+        <li class="mx-2"><a target="_blank" href="CV-Fernando-Averanga.pdf" class="" title="Curriculum">Hoja de vida</a></li>
         <li class="mx-2"><a href="https://api.whatsapp.com/send?phone=59165636603" class="" title="Whatsapp" target="_blank" rel="noopener noreferrer">Contáctame</a></li>
       </ul>
       <ul class="absolute top-0 right-0 flex mt-2 mr-2">

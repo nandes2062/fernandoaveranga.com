@@ -46,7 +46,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '~/plugins/global-components.js',
+    '@/plugins/global-components.js',
     {
       src: '~/plugins/vuescrollreveal',
       ssr: false
@@ -93,6 +93,13 @@ export default {
       }
     ]
   ],
+  generate: {
+    async ready () {
+      const { $content } = require('@nuxt/content')
+      const files = await $content().only(['slug']).fetch()
+      console.log(files)
+    }
+  },
   // Or with global options
   i18n: {
     locales: [

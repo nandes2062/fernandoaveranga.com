@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       spacing: {
         '-10pc': '-10%',
-        '26': '6.8rem',
+        '26': '6.7rem',
+        '30': '8.9rem',
         '80': '20rem',
         '108': '27rem'
       },
@@ -62,16 +63,16 @@ module.exports = {
         900: 'hsl(var(--accent-HS), 10%)'
       },
       accent2: {
-        base: 'var(--accent-2-color)',
-        100: 'hsl(var(--accent-2-HS), 90%)',
-        200: 'hsl(var(--accent-2-HS), 80%)',
-        300: 'hsl(var(--accent-2-HS), 70%)',
-        400: 'hsl(var(--accent-2-HS), 60%)',
-        500: 'hsl(var(--accent-2-HS), 50%)',
-        600: 'hsl(var(--accent-2-HS), 40%)',
-        700: 'hsl(var(--accent-2-HS), 30%)',
-        800: 'hsl(var(--accent-2-HS), 20%)',
-        900: 'hsl(var(--accent-2-HS), 10%)'
+        base: 'var(--accent2-color)',
+        100: 'hsl(var(--accent2-HS), 90%)',
+        200: 'hsl(var(--accent2-HS), 80%)',
+        300: 'hsl(var(--accent2-HS), 70%)',
+        400: 'hsl(var(--accent2-HS), 60%)',
+        500: 'hsl(var(--accent2-HS), 50%)',
+        600: 'hsl(var(--accent2-HS), 40%)',
+        700: 'hsl(var(--accent2-HS), 30%)',
+        800: 'hsl(var(--accent2-HS), 20%)',
+        900: 'hsl(var(--accent2-HS), 10%)'
       },
       error: {
         base: 'var(--error-color)',
@@ -205,5 +206,8 @@ module.exports = {
       'plugins/**/*.js',
       'nuxt.config.js'
     ]
+  },
+  future: {
+    removeDeprecatedGapUtilities: true,
   }
 }

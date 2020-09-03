@@ -1,7 +1,8 @@
 <template>
   <main>
     <FerPresentation class="bg-theme-base" />
-    <!-- <FerPortfolio class="bg-accent-100" /> -->
+    <!-- <separator-section class="bg-accent-100" color="var(--light-color)" />
+    <FerPortfolio :data="portfolio" class="bg-accent-100" /> -->
   </main>
 </template>
 
@@ -17,6 +18,16 @@ export default {
   name: 'Inicio',
   components: {
     ...indexComponents
+  },
+  async asyncData ({ $content }) {
+    const portfolio = await $content('portfolio')
+      .only(['title', 'description', 'image', 'slug'])
+      .sortBy('createdAt', 'desc')
+      .limit(6)
+      .fetch()
+    return {
+      portfolio
+    }
   }
 }
 </script>

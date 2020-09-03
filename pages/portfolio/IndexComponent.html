@@ -1,14 +1,21 @@
-<section id="inicio" class="overflow-hidden text-dark-base" :data="data">
-  <!-- <div class="video-filter">
-    <video class="w-full absolute object-cover sm:h-full bottom-0" loop autoplay muted src="background.mp4" style="object-position: 47% 50%;"></video>
-  </div> -->
+<main class="md:mt-26 mt-30">
+  <nav class="bg-info-600 text-light-base p-2 rounded shadow-lg w-full mb-5">
+    <ol class="container mx-auto list-reset flex text-grey-dark">
+      <li>
+        <nuxt-link to="/" class="font-bold">Inicio</nuxt-link>
+      </li>
+      <li><span class="mx-2">/</span></li>
+      <li>
+        Portfolio
+      </li>
+    </ol>
+  </nav>
   <div class="container mx-auto mt-10 mb-5">
     <div class="mb-5">
       <h1 class="text-center md:text-6xl mb-1">
         Portfolio
       </h1>
-      <p class="text-center text-lg">A continuación se puede observar mis últimos trabajos realizados.
-      <br><nuxt-link class="text-primary-base" to="/portfolio"><font-awesome-icon class="mr-2" :icon="['fas', 'link']" />Ver portfolio completo</nuxt-link>.</p>
+      <p class="text-center text-lg">A continuación se puede observar todos mis trabajos realizados.</p>
     </div>
     <!-- <div class="text-center">
       <button class="bg-success-base hover:bg-success-400 text-light-base font-bold py-2 px-3 mb-2 rounded shadow-xl">
@@ -27,7 +34,7 @@
     <div class="relative grid lg:grid-cols-3 sm:grid-cols-2 gap-6 overflow-auto mb-6">
       <div v-for="(item, id) in data" :key="id">
         <article class="shadow-xl bg-theme-300 rounded">
-          <img class="px-4 pt-3 bg-light-base w-full object-contain object-top transition hover:object-contain" :src="'portfolio/' + item.image" :alt="item.title">
+          <img class="bg-light-base w-full h-40 object-contain object-top transition hover:object-contain" :src="'/portfolio/' + item.image" :alt="item.title">
           <div class="px-3 py-2">
             <h1 class="mb-1 text-4xl truncate">{{ item.title }}</h1>
             <p class="text-sm truncate-2">{{ item.description }}</p>
@@ -38,11 +45,6 @@
         </article>
       </div>
     </div>
-    <div class="flex justify-center">
-      <nuxt-link class="text-xl font-heading font-bold bg-success-base text-light-base border rounded-full px-5 py-1" to="/portfolio">
-        <font-awesome-icon class="mr-2" :icon="['fas', 'link']" />
-        <span class="text-2xl">Ver Portfolio Completo</span>
-      </nuxt-link>
-    </div>
+    <div class="flex justify-center"></div>
   </div>
-</section>
+</main>

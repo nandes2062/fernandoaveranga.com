@@ -1,6 +1,8 @@
 ---
-title: Getting started
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+title: Actel Networks
+description: 'Sitio web administrable para visualizar la información, servicios y noticias que ofrece la empresa de telecomunicaciones, ActelNetworks liderado por el Ing. Rodrigo Arteaga'
+image: 'actelnetworks.png'
+site: 'https://actelnetworks.com/demo'
 ---
 
 Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.

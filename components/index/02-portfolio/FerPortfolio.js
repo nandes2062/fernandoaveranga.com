@@ -1,3 +1,9 @@
 export default {
-  name: 'FerPortfolio'
+  name: 'FerPortfolio',
+  props: {
+    data: {
+      type: Array,
+      default: []
+    }
+  }
 }
