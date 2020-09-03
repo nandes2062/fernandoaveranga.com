@@ -1,8 +1,8 @@
 <template>
   <main>
     <FerPresentation class="bg-theme-base" />
-    <!-- <separator-section class="bg-accent-100" color="var(--light-color)" />
-    <FerPortfolio :data="portfolio" class="bg-accent-100" /> -->
+    <separator-section class="bg-accent-100" color="var(--light-color)" />
+    <FerPortfolio :data="portfolio" class="bg-accent-100" />
   </main>
 </template>
 
@@ -21,7 +21,7 @@ export default {
   },
   async asyncData ({ $content }) {
     const portfolio = await $content('portfolio')
-      .only(['title', 'description', 'image', 'slug'])
+      .only(['title', 'description', 'imageDesktop', 'imageMobile', 'slug'])
       .sortBy('createdAt', 'desc')
       .limit(6)
       .fetch()

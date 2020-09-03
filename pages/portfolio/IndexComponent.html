@@ -34,7 +34,7 @@
     <div class="relative grid lg:grid-cols-3 sm:grid-cols-2 gap-6 overflow-auto mb-6">
       <div v-for="(item, id) in data" :key="id">
         <article class="shadow-xl bg-theme-300 rounded">
-          <img class="bg-light-base w-full h-40 object-contain object-top transition hover:object-contain" :src="'/portfolio/' + item.image" :alt="item.title">
+          <laptop-cellphone :desktop="'/portfolio/'+item.imageDesktop" :mobile="'/portfolio/'+item.imageMobile" :title="item.title" class="mb-1" />
           <div class="px-3 py-2">
             <h1 class="mb-1 text-4xl truncate">{{ item.title }}</h1>
             <p class="text-sm truncate-2">{{ item.description }}</p>

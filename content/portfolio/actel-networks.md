@@ -1,20 +1,24 @@
 ---
 title: Actel Networks
 description: 'Sitio web administrable para visualizar la información, servicios y noticias que ofrece la empresa de telecomunicaciones, ActelNetworks liderado por el Ing. Rodrigo Arteaga'
-image: 'actelnetworks.png'
+imageDesktop: 'actel-desktop.png'
+imageMobile: 'actel-mobile.png'
 site: 'https://actelnetworks.com/demo'
 ---
 
-Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
+## Características del Sitio web
+- Multilenguaje en Español, Inglés y Portugues 
+- Responsive adaptable para cualquier tipo de dispositivo.
+- Blog de noticias
+- Sitio web Administrable para los funcionarios de la empresa
 
-## Writing content
+## Tecnologías utilizadas en el desarrollo
+PHP, Redaxo CMS, Javascript ES2020, TailwindCSS, AlpineJS, entre las mas importantes.
 
-Learn how to write your `content/`, supporting Markdown, YAML, CSV and JSON: https://content.nuxtjs.org/writing.
+## Arquitectura y metodologias.
+- Combinación de ITCSS y Utility-FirstCSS.
+- BEM, StandardJS
+- Arquitectura basada en Componentes.
 
-## Fetching content
-
-Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.
-
-## Displaying content
-
-Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying.
+## Referencias
+Ing. Rodrigo arteaga - Gerente general de ActelNetworks

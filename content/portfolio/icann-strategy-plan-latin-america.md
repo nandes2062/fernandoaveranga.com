@@ -1,18 +1,24 @@
 ---
 title: ICANN Latinoamerica
 description: 'Se desarrolló una plataforma web administrable para visualizar la Estrategia de Latinoamérica y el Caribe, proyecto desarrollado para ICANN Latinoamérica.'
-image: 'icann-logo.png'
+imageDesktop: 'icann-desktop.png'
+imageMobile: 'icann-mobile.png'
 site: 'https://lacstrategy.space'
 ---
 
-# Tecnologías utilizadas en el desarrollo
+## Características del Sitio web
+- Multilenguaje en Español y Inglés
+- Responsive adaptable para cualquier tipo de dispositivo.
+- Blog de proyectos y áreas de la estrategia
+- Sitio web Administrable para los funcionarios de la organización
 
-RedaxoCMS, Javascript
+## Tecnologías utilizadas en el desarrollo
+PHP, Redaxo CMS, Javascript, Sass, ITCSS, VueJS, entre las mas importantes.
 
-## Fetching content
+## Arquitectura y metodologias.
+- Combinación de ITCSS y Utility-FirstCSS.
+- BEM, StandardJS
+- Arquitectura basada en Componentes.
 
-Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.
-
-## Displaying content
-
-Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying.
+## Referencias
+Ing. Rodrigo Saucedo - ICANN Strategic Initiatives - Latin America & Caribbean, Senior Manager
