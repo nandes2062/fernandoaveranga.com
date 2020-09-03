@@ -203,6 +203,8 @@ module.exports = {
       'layouts/**/*.js',
       'layouts/**/*.vue',
       'pages/**/*.vue',
+      'pages/**/*.html',
+      'pages/**/*.js',
       'plugins/**/*.js',
       'nuxt.config.js'
     ]
