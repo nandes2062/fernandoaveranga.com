@@ -31,7 +31,7 @@
         Sitios web estáticos
       </button>
     </div> -->
-    <div class="relative grid lg:grid-cols-3 sm:grid-cols-2 gap-6 mb-6">
+    <div class="relative grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mb-6">
       <div v-for="(item, id) in data" :key="id">
         <article class="mb-5">
           <laptop-cellphone :desktop="'/portfolio/'+item.imageDesktop" :mobile="'/portfolio/'+item.imageMobile" :title="item.title" class="mb-1" />
@@ -49,4 +49,5 @@
     </div>
     <div class="flex justify-center"></div>
   </div>
+  <separator-section color="hsl(var(--accent-HS), 90%)" />
 </main>

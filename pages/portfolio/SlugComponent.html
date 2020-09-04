@@ -1,42 +1,45 @@
 <main class="md:mt-26 mt-30">
-  <nav class="bg-info-600 text-light-base pb-1 pt-2 rounded shadow-lg w-full mb-5">
-    <ol class="container mx-auto list-reset flex text-md">
-      <li>
-        <nuxt-link to="/" class="font-bold">Inicio</nuxt-link>
-      </li>
-      <li><span class="mx-2">/</span></li>
-      <li>
-        <nuxt-link to="/portfolio" class="font-bold">Portfolio</nuxt-link>
-      </li>
-      <li><span class="mx-2">/</span></li>
-      <li>{{ page.title }}</li>
-    </ol>
-  </nav>
-  <div class="container mx-auto flex flex-wrap">
-    <article class="relative z-10 shadow-lg flex flex-wrap rounded w-full">
-      <div class="lg:py-0 md:py-10 py-0 lg:w-5/12 md:w-6/12 w-full px-5 flex align-center">
-        <laptop-cellphone :desktop="'/portfolio/'+page.imageDesktop" :mobile="'/portfolio/'+page.imageMobile" :title="page.title" class="mb-1" />
-      </div>
-      <div class="lg:w-7/12 md:w-6/12 w-full px-5">
-        <div>
-          <p class="text-sm text-text-400 flex items-center">
-            <font-awesome-icon class="mr-2" :icon="['fas', 'link']" />
-            {{ page.site }}
-          </p>
-          <a class="text-primary-base" :href="page.site" target="_blank" rel="noopener noreferrer">
-            <h1 class="text-4xl">{{ page.title }}</h1>
-          </a>
-          <p class="mb-2">{{ page.description }}</p>
+  <section class="bg-theme-150">
+    <nav class="bg-info-600 text-light-base pb-1 pt-2 rounded shadow-lg w-full mb-5">
+      <ol class="container mx-auto list-reset flex text-md">
+        <li>
+          <nuxt-link to="/" class="font-bold">Inicio</nuxt-link>
+        </li>
+        <li><span class="mx-2">/</span></li>
+        <li>
+          <nuxt-link to="/portfolio" class="font-bold">Portfolio</nuxt-link>
+        </li>
+        <li><span class="mx-2">/</span></li>
+        <li>{{ page.title }}</li>
+      </ol>
+    </nav>
+    <div class="container mx-auto flex flex-wrap">
+      <article class="relative z-10 shadow-lg flex flex-wrap rounded w-full">
+        <div class="lg:py-0 md:py-10 py-0 lg:w-5/12 md:w-6/12 w-full px-5 flex align-center">
+          <laptop-cellphone :desktop="'/portfolio/'+page.imageDesktop" :mobile="'/portfolio/'+page.imageMobile" :title="page.title" class="mb-1" />
         </div>
-        <footer class="mb-4">
-          <a class="bg-text-100 hover:bg-text-200 px-3 py-2 rounded" :href="page.site" target="_blank" rel="noopener noreferrer">
-            Visitar sitio
-          </a>
-        </footer>
+        <div class="lg:w-7/12 md:w-6/12 w-full px-5">
+          <div>
+            <p class="text-sm text-text-400 flex items-center">
+              <font-awesome-icon class="mr-2" :icon="['fas', 'link']" />
+              {{ page.site }}
+            </p>
+            <a class="text-primary-base" :href="page.site" target="_blank" rel="noopener noreferrer">
+              <h1 class="text-4xl">{{ page.title }}</h1>
+            </a>
+            <p class="mb-2">{{ page.description }}</p>
+          </div>
+          <footer class="mb-4">
+            <a class="bg-text-100 hover:bg-text-200 px-3 py-2 rounded" :href="page.site" target="_blank" rel="noopener noreferrer">
+              Visitar sitio
+            </a>
+          </footer>
+        </div>
+      </article>
+      <div class="relative z-0 w-11/12 mx-auto px-5 pt-5 shadow-lg">
+        <nuxt-content :document="page" />
       </div>
-    </article>
-    <div class="relative z-0 w-11/12 mx-auto px-5 pt-5 shadow-lg">
-      <nuxt-content :document="page" />
     </div>
-  </div>
+  </section>
+  <separator-section color="var(--theme-150)" />
 </main>
