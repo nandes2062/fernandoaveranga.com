@@ -3,16 +3,20 @@
     <FerPresentation class="bg-theme-base" />
     <separator-section class="bg-accent-100" color="var(--light-color)" />
     <FerPortfolio :data="portfolio" class="bg-accent-100" />
+    <separator-section color="hsl(var(--accent-HS), 90%)" />
+    <FerWorkWithMe />
   </main>
 </template>
 
 <script>
 import FerPresentation from '@/components/index/01-presentation'
 import FerPortfolio from '@/components/index/02-portfolio'
+import FerWorkWithMe from '@/components/index/03-work-with-me'
 
 const indexComponents = {
   FerPresentation,
-  FerPortfolio
+  FerPortfolio,
+  FerWorkWithMe
 }
 export default {
   name: 'Inicio',
@@ -22,7 +26,6 @@ export default {
   async asyncData ({ $content }) {
     const portfolio = await $content('portfolio')
       .only(['title', 'description', 'imageDesktop', 'imageMobile', 'slug'])
-      .sortBy('createdAt', 'desc')
       .limit(6)
       .fetch()
     return {
