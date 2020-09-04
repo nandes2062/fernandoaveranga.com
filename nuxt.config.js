@@ -27,6 +27,19 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        id: 'hs-script-loader',
+        async: true,
+        defer: true,
+        src: '//js.hs-scripts.com/8400368.js'
+      },
+      {
+        async: true,
+        defer: true,
+        src: 'https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js'
+      }
     ]
   },
   /*
