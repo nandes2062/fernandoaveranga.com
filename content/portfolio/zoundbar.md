@@ -3,7 +3,7 @@ title: Zoundbar
 description: 'Se desarrolló y diseño una plataforma de música en tiempo real para bares y restaurantes, con el framework frontend Vuejs y consumiendo API-REST en Python.'
 imageDesktop: 'zoundbar-admin-desktop.png'
 imageMobile: 'zoundbar-admin-mobile.png'
-site: 'https://app.zoundbar.github.io'
+site: 'https://app.zoundbar.com'
 ---
 
 
