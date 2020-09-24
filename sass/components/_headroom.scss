@@ -1,18 +1,25 @@
-.headroom {}
-.headroom--top {
-  .main-header {
-    background-color: transparent;
-    box-shadow: none;
-  }
-}
-.headroom--not-bottom {
-  
-}
-.headroom--not-top {
-  .main-header {
-    // background: var(--primary-color);
-  }
-  img.logo-header {
-    height: 4rem;
-  }
-}
+// .main-header {
+//   transition: transform .5s;
+//   transform: translateY(0);
+// }
+// .headroom {}
+// .headroom--top {
+//   .main-header {
+//     transform: translateY(0);
+//   }
+// }
+// .headroom--pinned {
+//   .main-header {
+//     transform: translateY(0);
+//   }
+// }
+// .headroom--not-top.headroom--unpinned {
+//   .main-header {
+//     transform: translateY(-100%);
+//   }
+// }
+// .headroom--not-top.headroom--pinned {
+//   .main-header {
+//     transform: translateY(0);
+//   }
+// }

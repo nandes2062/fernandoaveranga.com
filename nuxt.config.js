@@ -61,6 +61,14 @@ export default {
   plugins: [
     '@/plugins/global-components.js',
     {
+      src: "~/plugins/headroom.js",
+      ssr: true
+    },
+    {
+      src: "~/plugins/vuescrollactive.js",
+      ssr: true
+    },
+    {
       src: '~/plugins/vuescrollreveal',
       ssr: false
     }

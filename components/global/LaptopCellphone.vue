@@ -1,5 +1,5 @@
-<template src="./laptop-cellphone-component/LaptopCellphone.html" />
-<script src="./laptop-cellphone-component/LaptopCellphone.js" />
+<template src="./laptop-cellphone-component/LaptopCellphoneComponent.html" />
+<script src="./laptop-cellphone-component/LaptopCellphoneComponent.js" />
 <style lang="scss" scoped>
   /*
   Responsive CSS MacBook Retina Mockup by Henri Peetsmann
