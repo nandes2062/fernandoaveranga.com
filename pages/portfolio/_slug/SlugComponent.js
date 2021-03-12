@@ -1,6 +1,3 @@
-<template src="./SlugComponent.html" />
-
-<script>
 export default {
   async asyncData ({ $content, params }) {
     try {
@@ -16,4 +13,3 @@ export default {
     }
   }
 }
-</script>

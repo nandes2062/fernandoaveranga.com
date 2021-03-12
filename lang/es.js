@@ -1,5 +1,5 @@
 export default {
   general: {
-    occupation: 'Ingeniero UI, Desarrollador Web'
+    occupation: 'Desarrollador Web orientado al Frontend'
   }
 }

@@ -30,8 +30,11 @@
             <p class="mb-2">{{ page.description }}</p>
           </div>
           <footer class="mb-4">
-            <a class="bg-text-100 hover:bg-text-200 px-3 py-2 rounded" :href="page.site" target="_blank" rel="noopener noreferrer">
+            <a v-if="page.site" class="bg-text-100 hover:bg-text-200 px-3 py-2 rounded mr-3" :href="page.site" target="_blank" rel="noopener noreferrer">
               Visitar sitio
+            </a>
+            <a v-if="page.repository" class="bg-text-100 hover:bg-text-200 px-3 py-2 rounded" :href="page.repository" target="_blank" rel="noopener noreferrer">
+              Repositorio de proyecto
             </a>
           </footer>
         </div>

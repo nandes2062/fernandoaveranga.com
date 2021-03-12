@@ -28,7 +28,9 @@
       <div class="pb-8" v-for="(item, id) in data" :key="id">
         <article class="bg-transparent">
           <!-- <img class="px-4 pt-3 bg-light-base w-full object-contain object-top transition hover:object-contain" :src="'portfolio/' + item.image" :alt="item.title"> -->
-          <laptop-cellphone :desktop="'/portfolio/'+item.imageDesktop" :mobile="'/portfolio/'+item.imageMobile" :title="item.title" class="mb-1" />
+          <nuxt-link :to="`/portfolio/${item.slug}`">
+            <laptop-cellphone :desktop="'/portfolio/'+item.imageDesktop" :mobile="'/portfolio/'+item.imageMobile" :title="item.title" class="mb-1" />
+          </nuxt-link>
           <div class="shadow-lg bg-theme-base rounded">
             <div class="px-3 py-2">
               <h1 class="mb-1 text-4xl truncate">{{ item.title }}</h1>

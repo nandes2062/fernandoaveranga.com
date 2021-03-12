@@ -1,5 +1,4 @@
 import { join } from 'path'
-// Langs translates
 import langs from './lang'
 
 export default {
@@ -59,7 +58,6 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '@/plugins/global-components.js',
     {
       src: "~/plugins/headroom.js",
       ssr: true
@@ -77,7 +75,9 @@ export default {
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
   */
-  components: true,
+  components: [
+    { path: '~/common/components', extensions: ['vue'] }
+  ],
   /*
   ** Nuxt.js dev-modules
   */
@@ -102,14 +102,18 @@ export default {
     [
       'nuxt-fontawesome', {
         imports: [
-         {
-           set: '@fortawesome/free-solid-svg-icons',
-           icons: ['fas']
-         },
-         {
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          },
+          {
+            set: '@fortawesome/free-regular-svg-icons',
+            icons: ['far']
+          },
+          {
            set:'@fortawesome/free-brands-svg-icons',
            icons: ['fab']
-         }
+          }
        ]
       }
     ]
@@ -142,10 +146,6 @@ export default {
       fallbackLocale: 'es',
       messages: langs
     }
-  },
-  //alternative place for config
-  fontawesome: {
-    imports: []
   },
   /*
   ** Axios module configuration
