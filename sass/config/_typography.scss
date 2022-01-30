@@ -3,9 +3,9 @@
 // CSS for typography will be generate from theme/_typography.scss file.
 
 // Convert pixels to rem
-@function rem($px) {
-  @return ($px / 16px) * 1rem;
-}
+// @function rem($px) {
+//   @return (($px/16px) * 1rem);
+// }
 
 // Font families
 $body-font   : 'Josefin Sans', 'Open Sans', 'sans-serif'; // only 400 and 400i
@@ -16,9 +16,9 @@ $fontSizes: (
   title1  : 4rem,
   title2  : 3rem,
   title3  : 2.25rem,
-  normal  : rem(17px),
-  small   : rem(15px),
-  smaller : rem(12px)
+  normal  : 1.4rem,
+  small   : 1.0rem,
+  smaller : 0.7rem
 );
 
 // Get font size from map
