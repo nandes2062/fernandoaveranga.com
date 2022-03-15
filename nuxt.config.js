@@ -22,7 +22,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Ingeniero UI, Ingeniero de Sistemas, Desarrollador web, Bolivia' }
+      { hid: 'description', name: 'description', content: 'Ingeniero de Sistemas, Desarrollador web, Ingeniero Frontend' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -145,6 +145,20 @@ export default {
     vueI18n: {
       fallbackLocale: 'es',
       messages: langs
+    }
+  },
+  pwa: {
+    meta: {
+      mobileApp: false,
+      mobileAppIOS: false,
+      name: 'Fernando Averanga',
+      author: 'Fernando Javier Averanga Aruquipa',
+      description: 'Ingeniero de Sistemas, Desarrollador web, Ingeniero Frontend',
+      theme_color: '#1a76c1',
+      ogSiteName: 'Fernando Averanga',
+      ogTitle: 'Fernando Javier Averanga Aruquipa',
+      ogDescription: 'Ingeniero de Sistemas, Desarrollador web, Ingeniero Frontend',
+      ogUrl: 'https://fernandoaveranga.com'
     }
   },
   /*
