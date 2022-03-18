@@ -16,9 +16,6 @@ This boilerplate is based in ITCSS and SMACSS
   // TailwinCSS with tailwind.config.js
 @import "fonts/heading-font";
 @import "fonts/body-font";
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 
 //Element
 @import "base/base";

@@ -45,6 +45,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/css/tailwind.css',
     // SCSS file in the project
     '@/sass/styles.scss'
   ],
@@ -82,10 +83,11 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxt/postcss8',
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    '@nuxtjs/eslint-module'
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    // '@nuxtjs/tailwindcss'
   ],
   /*
   ** Nuxt.js modules
@@ -176,16 +178,10 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-    // extractCSS: true,
     postcss: {
       plugins: {
-        tailwindcss: join(__dirname, 'tailwind.config.js'),
+        tailwindcss: {},
         'postcss-custom-properties': {},
-        cssnano: {
-          preset: 'default'
-        }
-      },
-      preset: {
         autoprefixer: {}
       }
     }
