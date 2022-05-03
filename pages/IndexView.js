@@ -1,7 +1,7 @@
-import IndexMixin from '@/modules/index/index'
+import IndexModuleMixin from './IndexModuleMixin'
 export default {
   name: 'Inicio',
-  mixins: [IndexMixin],
+  mixins: [IndexModuleMixin],
   async asyncData ({ $content }) {
     const portfolio = await $content('portfolio')
       .only(['title', 'description', 'imageDesktop', 'imageMobile', 'slug'])

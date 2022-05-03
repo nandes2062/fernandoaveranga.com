@@ -1,3 +1,5 @@
 pages/**/*.html
 pages/**/*.js
-pages/**/*.scss
+pages/**/__*/**/*
+layouts/**/*.html
+layouts/**/*.js

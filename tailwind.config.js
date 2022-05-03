@@ -5,6 +5,7 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
+  darkMode: 'class',
   theme: {
     minHeight : {
       '500': '500px'
@@ -211,8 +212,5 @@ module.exports = {
       'plugins/**/*.js',
       'nuxt.config.js'
     ]
-  },
-  future: {
-    removeDeprecatedGapUtilities: true,
   }
 }
