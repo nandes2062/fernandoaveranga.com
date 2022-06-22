@@ -1,7 +1,14 @@
 import StreamingAccountsData from './StreamingAccountsData.json'
 
 export default {
+  layout: 'cuentas-de-streaming-bolivia',
   asyncData () {
+    const digitalCombos = StreamingAccountsData['digital-combos'].map((v) => {
+      return {
+        ...v,
+        href: `https://api.whatsapp.com/send?phone=59162280788&text=Hola%2C%20quisiera%20obtener%20una%20cuenta%20de%20*${v.name}%20${v.type}%20por%20Bs%20${v.price}.*`
+      }
+    })
     const digitalAccounts = StreamingAccountsData['digital-accounts'].map((v) => {
       return {
         ...v,
@@ -9,7 +16,9 @@ export default {
       }
     })
     return {
-      digitalAccounts
+      digitalAccounts,
+      digitalCombos
+
     }
   },
   head () {
