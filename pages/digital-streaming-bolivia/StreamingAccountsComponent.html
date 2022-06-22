@@ -9,7 +9,7 @@
             <span class="text-2xl">62280788</span>
           </a>
         </p>
-        <nav class="flex mb-4">
+        <nav class="sm:flex mb-4 hidden">
           <ul class="min-w-full flex lg:justify-start justify-center overflow-auto scroll pb-1.5">
             <li class="mr-0.5 flex-none">
               <nuxt-link to="/digital-streaming-bolivia/" class="cursor-pointer flex items-center mx-1 py-1.5 px-2.5 md:text-sm rounded-lg"
@@ -36,7 +36,7 @@
         </nav>
       </div>
       <hr class="mb-10">
-      <div v-show="$route.query.tab !== 'combos-digitales'" class="flex justify-between items-center font-body font-bold italic mb-8 relative">
+      <div v-show="$route.query.tab !== 'combos-digitales'" class="sm:flex hidden justify-between items-center font-body font-bold italic mb-8 relative">
         <div class="lg:mr-36">
           <h3 class="font-body text-left lg:text-3xl text-xl text-sky-500">Cuentas</h3>
           <h3 class="font-body text-left lg:text-5xl text-3xl">Digitales</h3>
@@ -101,7 +101,7 @@
         </article>
       </div>
       <hr v-show="$route.query.tab !== 'combos-digitales'" class="mb-10">
-      <div v-show="$route.query.tab !== 'cuentas-digitales'" class="flex justify-between items-center font-body font-bold italic mb-8 relative">
+      <div v-show="$route.query.tab !== 'cuentas-digitales'" class="sm:flex hidden justify-between items-center font-body font-bold italic mb-8 relative">
         <div class="lg:mr-36">
           <h3 class="font-body text-left lg:text-3xl text-xl text-orange-500">Combos</h3>
           <h3 class="font-body text-left lg:text-5xl text-3xl">Digitales</h3>
