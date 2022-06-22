@@ -40,8 +40,7 @@
       "name": "Paramount Plus",
       "type": "1 Mes (Una cuenta)",
       "image": "/streaming/paramount.png",
-      "price": 24,
-      "amount": 15,
+      "price": 15,
       "coin": "Bs",
       "days": 30,
       "class": "bg-gradient-to-r from-gray-500 to-sky-700 hover:to-sky-400"
