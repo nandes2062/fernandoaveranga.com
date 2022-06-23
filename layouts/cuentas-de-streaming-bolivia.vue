@@ -2,7 +2,7 @@
   <div>
     <header class="text-white bg-sky-600 px-3 pt-6 pb-3">
       <h1 class="flex justify-center flex-nowrap text-center md:text-6xl sm:text-5xl text-3xl mb-4">
-        🎬 Digital streaming Bolivia 🇧🇴
+        🎬 Tienda Digital Bolivia 🇧🇴
       </h1>
       <p class="text-center lg:text-2xl sm:text-xl text-lg mb-1.5 text-sky-100">¡Plataformas digitales de streaming a precios accesibles!</p>
     </header>
@@ -30,16 +30,6 @@
               <font-awesome-icon :icon="['fab', 'linkedin']"  />
             </a>
           </li>
-          <!-- <li class="mx-2">
-            <a class="hover:text-primary-base" href="https://github.com/nandes2062" target="_blank" rel="noopener noreferrer">
-              <font-awesome-icon :icon="['fab', 'github']"  />
-            </a>
-          </li>
-          <li class="mx-2">
-            <a class="hover:text-primary-base" href="https://gitlab.com/2062nandes" target="_blank" rel="noopener noreferrer">
-              <font-awesome-icon :icon="['fab', 'gitlab']"  />
-            </a>
-          </li> -->
         </ul>
       </div>
     </footer>

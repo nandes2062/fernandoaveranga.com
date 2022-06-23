@@ -23,7 +23,7 @@ export default {
   },
   head () {
     return {
-      title: 'Cuentas de streaming',
+      title: 'Tienda digital Bolivia',
       meta: [
         { hid: 'description', name: 'description', content: 'Netflix, Amazon prime, Spotify, Disney plus, HBO Max, Youtube Premium, Paramount Plus, Star Plus' }
       ]
@@ -32,12 +32,12 @@ export default {
   pwa () {
     return {
       meta: {
-        name: 'Cuentas de streaming',
+        name: 'Tienda digital Bolivia',
         author: 'Fernando Javier Averanga Aruquipa',
         description: 'Netflix, Amazon prime, Spotify, Disney plus, HBO Max, Youtube Premium, Paramount Plus, Star Plus',
         theme_color: '#1a76c1',
-        ogSiteName: 'Cuentas de streaming',
-        ogTitle: 'Cuentas de streaming',
+        ogSiteName: 'Tienda digital Bolivia',
+        ogTitle: 'Tienda digital Bolivia',
         ogDescription: 'Netflix, Amazon prime, Spotify, Disney plus, HBO Max, Youtube Premium, Paramount Plus, Star Plus',
         ogUrl: 'https://fernandoaveranga.com'
       }
