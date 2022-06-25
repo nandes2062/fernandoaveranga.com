@@ -95,7 +95,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
     [
@@ -149,20 +149,20 @@ export default {
       messages: langs
     }
   },
-  pwa: {
-    meta: {
-      mobileApp: false,
-      mobileAppIOS: false,
-      name: 'Fernando Averanga',
-      author: 'Fernando Javier Averanga Aruquipa',
-      description: 'Ingeniero de Sistemas, Desarrollador web, Ingeniero Frontend',
-      theme_color: '#1a76c1',
-      ogSiteName: 'Fernando Averanga',
-      ogTitle: 'Fernando Javier Averanga Aruquipa',
-      ogDescription: 'Ingeniero de Sistemas, Desarrollador web, Ingeniero Frontend',
-      ogUrl: 'https://fernandoaveranga.com'
-    }
-  },
+  // pwa: {
+  //   meta: {
+  //     mobileApp: false,
+  //     mobileAppIOS: false,
+  //     name: 'Fernando Averanga',
+  //     author: 'Fernando Javier Averanga Aruquipa',
+  //     description: 'Ingeniero de Sistemas, Desarrollador web, Ingeniero Frontend',
+  //     theme_color: '#1a76c1',
+  //     ogSiteName: 'Fernando Averanga',
+  //     ogTitle: 'Fernando Javier Averanga Aruquipa',
+  //     ogDescription: 'Ingeniero de Sistemas, Desarrollador web, Ingeniero Frontend',
+  //     ogUrl: 'https://fernandoaveranga.com'
+  //   }
+  // },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

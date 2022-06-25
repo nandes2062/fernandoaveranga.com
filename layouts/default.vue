@@ -19,7 +19,25 @@ export default {
   },
   head () {
     return {
-      htmlAttrs: { lang: this.$i18n.locale }
+      htmlAttrs: { lang: this.$i18n.locale },
+      title: 'Fernando Javier Averanga Aruquipa',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Ingenierio de Software Web / Consultor en tecnologías web'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Fernando Javier Averanga Aruquipa'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Ingenierio de Software Web / Consultor en tecnologías web'
+        }
+      ]
     }
   }
 }

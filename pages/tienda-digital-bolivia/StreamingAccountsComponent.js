@@ -17,30 +17,44 @@ export default {
     })
     return {
       digitalAccounts,
-      digitalCombos
-
+      digitalCombos,
+      head: {
+        title: 'Tienda Digital Bolivia',
+        description: 'Venta de servicios digitales a precios accesibles.',
+        image: '/tienda-digital-bolivia.jpg'
+      }
     }
   },
   head () {
     return {
-      title: 'Tienda digital Bolivia',
+      title: this.head.title,
       meta: [
-        { hid: 'description', name: 'description', content: 'Netflix, Amazon prime, Spotify, Disney plus, HBO Max, Youtube Premium, Paramount Plus, Star Plus' }
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.head.description
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.head.title
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.head.image
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.head.description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://fernandoaveranga.com/tienda-digital-bolivia'
+        }
       ]
-    }
-  },
-  pwa () {
-    return {
-      meta: {
-        name: 'Tienda digital Bolivia',
-        author: 'Fernando Javier Averanga Aruquipa',
-        description: 'Netflix, Amazon prime, Spotify, Disney plus, HBO Max, Youtube Premium, Paramount Plus, Star Plus',
-        theme_color: '#1a76c1',
-        ogSiteName: 'Tienda digital Bolivia',
-        ogTitle: 'Tienda digital Bolivia',
-        ogDescription: 'Netflix, Amazon prime, Spotify, Disney plus, HBO Max, Youtube Premium, Paramount Plus, Star Plus',
-        ogUrl: 'https://fernandoaveranga.com'
-      }
     }
   }
 }

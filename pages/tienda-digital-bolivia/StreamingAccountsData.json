@@ -102,6 +102,24 @@
       "coin": "Bs",
       "time": "Un mes",
       "class": "bg-gradient-to-r from-purple-600 to-blue-500 hover:to-purple-400"
+    },
+    {
+      "name": "Netflix, Prime y Disney",
+      "type": "1 Mes (1 perfil)",
+      "image": "/streaming/netflix-prime-disney.jpeg",
+      "price": 35,
+      "coin": "Bs",
+      "time": "Un mes",
+      "class": "bg-gradient-to-r from-red-600 via-slate-800 to-sky-600 hover:via-slate-700"
+    },
+    {
+      "name": "Netflix, Prime y HBO",
+      "type": "1 Mes (1 perfil)",
+      "image": "/streaming/netflix-prime-hbo.jpg",
+      "price": 35,
+      "coin": "Bs",
+      "time": "Un mes",
+      "class": "bg-gradient-to-r from-red-600 via-purple-700 to-sky-600 hover:via-purple-600"
     }
   ]
 }

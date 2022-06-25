@@ -36,12 +36,12 @@
         </nav>
       </div>
       <hr class="mb-10">
-      <div v-show="$route.query.tab !== 'combos-digitales'" class="sm:flex hidden justify-between items-center font-body font-bold italic mb-8 relative">
+      <div v-show="$route.query.tab !== 'combos-digitales'" class="flex justify-between items-center font-body font-bold italic mb-4 sm:mb-8 relative">
         <div class="lg:mr-36">
           <h3 class="font-body text-left lg:text-3xl text-xl text-sky-500">Cuentas</h3>
           <h3 class="font-body text-left lg:text-5xl text-3xl">Digitales</h3>
         </div>
-        <div class="lg:ml-36">
+        <div class="lg:ml-36 hidden sm:block">
           <h3 class="font-body text-right lg:text-2xl text-lg">¡Cuentas disponibles para todo el País</h3>
           <h3 class="font-body lg:text-4xl text-2xl flex items-center justify-end"><span class="text-2xl">🇧🇴 🎬</span> <span class="text-sky-500">dale un vistazo!</span></h3>
         </div>
@@ -103,12 +103,12 @@
         </article>
       </div>
       <hr v-show="$route.query.tab !== 'combos-digitales'" class="mb-10">
-      <div v-show="$route.query.tab !== 'cuentas-digitales'" class="sm:flex hidden justify-between items-center font-body font-bold italic mb-8 relative">
+      <div v-show="$route.query.tab !== 'cuentas-digitales'" class="flex justify-between items-center font-body font-bold italic mb-4 sm:mb-8 relative">
         <div class="lg:mr-36">
           <h3 class="font-body text-left lg:text-3xl text-xl text-orange-500">Combos</h3>
           <h3 class="font-body text-left lg:text-5xl text-3xl">Digitales</h3>
         </div>
-        <div class="lg:ml-36">
+        <div class="lg:ml-36 hidden sm:block">
           <h3 class="font-body text-right lg:text-2xl text-lg">¡Combos disponibles para todo el País</h3>
           <h3 class="font-body lg:text-4xl text-2xl flex items-center justify-end"><span class="text-2xl">🇧🇴 🎬</span> <span class="text-orange-500">dale un vistazo!</span></h3>
         </div>
