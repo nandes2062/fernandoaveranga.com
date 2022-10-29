@@ -38,7 +38,7 @@
     },
     {
       "name": "Paramount Plus",
-      "type": "1 Mes (Una cuenta)",
+      "type": "1 Mes (Cuenta completa)",
       "image": "/streaming/paramount.png",
       "price": 18,
       "coin": "Bs",
@@ -66,13 +66,43 @@
     },
     {
       "name": "Crunchyroll",
-      "type": "1 Mes (Una cuenta)",
+      "type": "1 Mes (Cuenta completa)",
       "image": "/streaming/crunchyroll.png",
       "price": 18,
       "amount": 1,
       "coin": "Bs",
       "days": 30,
       "class": "bg-gradient-to-r from-amber-600 to-orange-400 hover:to-amber-400"
+    },
+    {
+      "name": "MagisTV",
+      "type": "1 Mes (Cuenta completa)",
+      "image": "/streaming/magistv.jpg",
+      "price": 45,
+      "amount": 1,
+      "coin": "Bs",
+      "days": 30,
+      "class": "bg-gradient-to-r from-amber-700 to-orange-500 hover:to-amber-400"
+    },
+    {
+      "name": "MagisTV",
+      "type": "3 Meses (Cuenta completa)",
+      "image": "/streaming/magistv3m.png",
+      "price": 120,
+      "amount": 1,
+      "coin": "Bs",
+      "days": 30,
+      "class": "bg-gradient-to-r from-amber-700 to-orange-500 hover:to-amber-400"
+    },
+    {
+      "name": "MagisTV",
+      "type": "7 Meses (Cuenta completa)",
+      "image": "/streaming/magistv7m.png",
+      "price": 250,
+      "amount": 1,
+      "coin": "Bs",
+      "days": 30,
+      "class": "bg-gradient-to-r from-amber-700 to-orange-500 hover:to-amber-400"
     }
   ],
   "digital-combos": [
